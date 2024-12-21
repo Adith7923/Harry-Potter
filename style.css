@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'HarryP';
+    src: url('./assets/fonts/HARRYP__.TTF') format('truetype');
+}
+
+
+
+body {
+    background: linear-gradient(to bottom, #C0C0C0, #FFFFFF); 
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+
+}
+
+body h2 {
+    font-family: 'HarryP', sans-serif;
+    margin: 70px;
+    font-size: 60px;
+    text-align: center;
+}
+
+body p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: larger;
+    margin: 30px;
+    padding: 20px;
+    text-align: justify;
+}
+
+header {
+    height: 150px;
+    background-image: url('./assets/images/926e80a8e44b2ce425ae5a538b2a78d9.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+header h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+    margin: 10px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h3 span{
+    font-size: large;
+    text-decoration: none;
+    color: gray;
+    display: flex;
+    justify-content: end;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 0px;
+    padding: 10px;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    left: 0;
+    background: rgba(58, 11, 11, 0.729);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: bottom 0.6s ease, opacity 0.6s ease;
+    color: #FFFFFF;
+
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+
+.item:hover .overlay {
+    bottom: 0;
+    opacity: 1;
+}
+
+.overlay h1{
+    font-family: 'HarryP', sans-serif;
+    text-align: center;
+}
+
+.overlay-1 {
+    background: rgba(67, 9, 9, 0.8);
+}
+
+.overlay-2 {
+    background: rgba(3, 60, 30, 0.8);
+}
+
+.overlay-3 {
+    background: rgba(1, 6, 59, 0.8);
+}
+
+.overlay-4 {
+    background: rgba(72, 25, 7, 0.8);
+}
+
+.overlay-5 {
+    background: rgba(21, 20, 28, 0.8);
+}
+
+.overlay-6 {
+    background: rgba(39, 11, 41, 0.8);
+}
+
+.overlay-7 {
+    background: rgba(12, 23, 58, 0.8);
+}
+
+.overlay-8 {
+    background: rgba(72, 13, 13, 0.8);
+}
+
+.overlay p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .item img {
+        height: 300px;
+    }
+
+    header {
+        font-size: 20px;
+    }
+}
+
