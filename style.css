@@ -165,11 +165,17 @@ h3 span{
     }
 
     .item img {
-        height: 300px;
+        height: 500px;
     }
 
     header {
         font-size: 20px;
+    }
+
+    .overlay p{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
     }
 }
 
