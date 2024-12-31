@@ -11,7 +11,7 @@
 
 
 body {
-    background: linear-gradient(to bottom, #C0C0C0, #FFFFFF); 
+    background: linear-gradient(to bottom, #8f8f8f, #FFFFFF); 
     font-family: 'Poppins', sans-serif;
     color: #333333;
 
@@ -155,6 +155,12 @@ h3 span{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    
+}
+
+.overlay p a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 

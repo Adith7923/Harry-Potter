@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'HarryP';
+    src: url('./assets/fonts/HARRYP__.TTF') format('truetype');
+}
+
+body {
+    background: linear-gradient(to bottom, #3d3b3b, #FFFFFF); 
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+}
+
+body h2 {
+    font-family: 'HarryP', sans-serif;
+    margin: 70px;
+    font-size: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+.container img {
+    height: 400px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 0;
+}
+
+.container p {
+    margin: 60px;
+    font-size: larger;
+    text-align: justify;
+}
+
+.movie-details-1, .movie-details-2 {
+    font-family: 'Poppins', sans-serif;
+    color: #110f0f;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+}
+
+.movie-details-1 h2, .movie-details-2 h2 {
+    font-family: 'HarryP', sans-serif;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.movie-details-1 li, .movie-details-2 li {
+    margin: 10px 20px;
+    display: flex;
+}
+
+.movie-details-1 li strong, .movie-details-2 li strong {
+    font-weight: bold;
+    text-align: left; 
+}
+
+.item {
+    width: 580px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container p {
+        margin: 20px;
+        font-size: 1rem;
+    }
+
+    .movie-details-1, .movie-details-2 {
+        gap: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .movie-details-1 .item, .movie-details-2 .item {
+        width: 100%;
+    }
+
+    .movie-details-1 h2, .movie-details-2 h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .movie-details-1 li, .movie-details-2 li {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin-top: 30px;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+        margin: 10px;
+    }
+
+    .movie-details-1, .movie-details-2 {
+        gap: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .movie-details-1 h2, .movie-details-2 h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .movie-details-1 li, .movie-details-2 li {
+        margin: 5px 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+}
