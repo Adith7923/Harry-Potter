@@ -24,6 +24,15 @@ body h2 {
     text-align: center;
 }
 
+footer h4{
+   
+        font-family: 'HarryP', sans-serif;
+        margin: 70px;
+        font-size: 40px;
+        text-align: center;
+    
+}
+
 body p {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
@@ -163,7 +172,10 @@ h3 span{
     color: #FFFFFF;
 }
 
-
+.dark-mode {
+    background: linear-gradient(to bottom, #333333, #000000);
+    color: white;
+}
 
 @media (max-width: 768px) {
     .grid-container {
