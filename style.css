@@ -188,7 +188,6 @@ footer h4 a:hover {
     color: #ffdd57;
 }
 
-
 .carousel-container {
     display: flex;
     justify-content: center;
@@ -196,25 +195,25 @@ footer h4 a:hover {
     margin: 20px auto;
     width: 70%;
     position: relative;
-  }
-  
-  .carousel-inner {
+}
+
+.carousel-inner {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-  }
-  
-  .carousel-item {
+}
+
+.carousel-item {
     position: relative;
-  }
-  
-  .carousel-item img {
+}
+
+.carousel-item img {
     border-radius: 20px;
     transition: transform 0.5s ease, opacity 0.5s ease;
-  }
-  
-  .hover-overlay {
+}
+
+.hover-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -231,30 +230,30 @@ footer h4 a:hover {
     padding: 20px;
     border-radius: 20px;
     transition: opacity 0.5s ease;
-  }
-  
-  .hover-overlay h5 {
+}
+
+.hover-overlay h5 {
     font-size: 24px;
     margin-bottom: 10px;
     font-family: 'HarryP', sans-serif;
-  }
-  
-  .hover-overlay p {
+}
+
+.hover-overlay p {
     font-size: 16px;
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
-  }
-  
-  .carousel-item:hover img {
+}
+
+.carousel-item:hover img {
     transform: scale(1.05);
     opacity: 0.5;
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
-  }
-  
-  .carousel-item:hover .hover-overlay {
+}
+
+.carousel-item:hover .hover-overlay {
     opacity: 1;
-  }
-    
+}
+
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
@@ -272,5 +271,50 @@ footer h4 a:hover {
         text-align: center;
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
+    }
+
+    .carousel-container {
+        font-size: small;
+    }
+}
+
+@media (max-width: 486px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .item img {
+        height: 500px;
+    }
+
+    header {
+        font-size: 20px;
+    }
+
+    .overlay p {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+    }
+
+    .carousel-container {
+        width: 95%;
+    }
+
+    .hover-overlay h5 {
+        font-size: 16px;
+    }
+
+    .hover-overlay p {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-item:hover img {
+        opacity: 0.7;
     }
 }
