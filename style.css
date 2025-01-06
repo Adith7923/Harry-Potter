@@ -8,13 +8,10 @@
     src: url('./assets/fonts/HARRYP__.TTF') format('truetype');
 }
 
-
-
 body {
     background: linear-gradient(to bottom, #8f8f8f, #FFFFFF); 
     font-family: 'Poppins', sans-serif;
     color: #333333;
-
 }
 
 body h2 {
@@ -24,13 +21,17 @@ body h2 {
     text-align: center;
 }
 
-footer h4{
-   
-        font-family: 'HarryP', sans-serif;
-        margin: 70px;
-        font-size: 40px;
-        text-align: center;
-    
+footer h4 {
+    font-family: 'HarryP', sans-serif;
+    margin: 70px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer h4 a {
+    text-decoration: none;
+    color: #000000;
 }
 
 body p {
@@ -63,7 +64,7 @@ header h3 {
     text-shadow: 2px 2px 4px #000000;
 }
 
-h3 span{
+h3 span {
     font-size: large;
     text-decoration: none;
     color: gray;
@@ -111,7 +112,6 @@ h3 span{
     opacity: 0;
     transition: bottom 0.6s ease, opacity 0.6s ease;
     color: #FFFFFF;
-
 }
 
 .item:hover img {
@@ -123,7 +123,7 @@ h3 span{
     opacity: 1;
 }
 
-.overlay h1{
+.overlay h1 {
     font-family: 'HarryP', sans-serif;
     text-align: center;
 }
@@ -160,14 +160,13 @@ h3 span{
     background: rgba(72, 13, 13, 0.8);
 }
 
-.overlay p{
+.overlay p {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    
 }
 
-.overlay p a{
+.overlay p a {
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -175,6 +174,18 @@ h3 span{
 .dark-mode {
     background: linear-gradient(to bottom, #333333, #000000);
     color: white;
+}
+
+.dark-mode footer h4 a {
+    color: white;
+}
+
+footer h4 a:hover {
+    color: #3b3a35;
+}
+
+.dark-mode footer h4 a:hover {
+    color: #ffdd57;
 }
 
 @media (max-width: 768px) {
@@ -190,10 +201,9 @@ h3 span{
         font-size: 20px;
     }
 
-    .overlay p{
+    .overlay p {
         text-align: center;
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
     }
 }
-
