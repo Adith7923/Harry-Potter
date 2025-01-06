@@ -232,10 +232,9 @@ footer h4 a:hover {
     transition: opacity 0.5s ease;
 }
 
-.hover-overlay h5 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.hover-overlay{
     font-family: 'HarryP', sans-serif;
+    font-size: large;
 }
 
 .hover-overlay p {
@@ -278,7 +277,7 @@ footer h4 a:hover {
     }
 }
 
-@media (max-width: 486px) {
+@media (max-width: 600px) {
     .grid-container {
         grid-template-columns: 1fr;
     }
